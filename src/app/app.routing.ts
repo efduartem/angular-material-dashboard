@@ -19,14 +19,15 @@ const routes: Routes =[
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
+    { path: '',               redirectTo: 'dashboard', pathMatch: 'full' },
+    { path: '**',             pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {useHash:true})
   ],
   exports: [
   ],
