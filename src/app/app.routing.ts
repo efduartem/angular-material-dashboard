@@ -10,6 +10,7 @@ import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { GoogleMapsFormComponent } from './google-maps-form/google-maps-form.component'
 
 const routes: Routes =[
     { path: 'dashboard',      component: DashboardComponent },
@@ -19,6 +20,7 @@ const routes: Routes =[
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
+    { path: 'google-maps-form', component: GoogleMapsFormComponent },
     { path: '',               redirectTo: 'dashboard', pathMatch: 'full' },
     { path: '**',             pathMatch: 'full', redirectTo: 'home' }
 ];

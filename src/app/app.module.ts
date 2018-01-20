@@ -16,6 +16,7 @@ import { TypographyComponent } from './typography/typography.component';
 import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { GoogleMapsFormComponent } from './google-maps-form/google-maps-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     TypographyComponent,
     IconsComponent,
     MapsComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    GoogleMapsFormComponent
   ],
   imports: [
     BrowserModule,

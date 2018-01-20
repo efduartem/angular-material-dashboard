@@ -14,7 +14,8 @@ export const ROUTES: RouteInfo[] = [
     { path: 'typography', title: 'Tipografia',  icon:'library_books', class: '' },
     { path: 'icons', title: 'Iconos',  icon:'bubble_chart', class: '' },
     { path: 'maps', title: 'Mapas',  icon:'location_on', class: '' },
-    { path: 'notifications', title: 'Notificaciones',  icon:'notifications', class: '' }
+    { path: 'notifications', title: 'Notificaciones',  icon:'notifications', class: '' },
+    { path: 'google-maps-form', title: 'Google Maps Form',  icon:'location_on', class: '' }
 ];
 
 @Component({

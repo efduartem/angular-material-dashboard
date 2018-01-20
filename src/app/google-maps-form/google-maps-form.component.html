@@ -1,0 +1,75 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header" data-background-color="red">
+            <h4 class="title">Google Places Autocomplete</h4>
+            <p class="category">Completa la direccion</p>
+          </div>
+          <div class="card-content">
+            <form>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group form-black label-floating is-empty">
+                    <input type="text" class="form-control" id="autocomplete">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':street.length == 0}">
+                    <label class="control-label">Calle</label>
+                    <input type="text" class="form-control" value="{{street}}">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':addressNumber.length == 0}">
+                    <label class="control-label">Nro.</label>
+                    <input type="text" class="form-control" value="{{addressNumber}}">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':city.length == 0}">
+                    <label class="control-label">Ciudad</label>
+                    <input type="text" class="form-control" value="{{city}}">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':state.length == 0}">
+                    <label class="control-label">Provincia</label>
+                    <input type="text" class="form-control" value="{{state}}">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':country.length == 0}">
+                    <label class="control-label">Pais</label>
+                    <input type="text" class="form-control" value="{{country}}">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':lat.length > 0}">
+                    <label class="control-label">Latitud</label>
+                    <input type="text" class="form-control" value="{{lat}}">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group form-black label-floating" [ngClass]="{'is-empty':lng.length > 0}">
+                    <label class="control-label">Longitud</label>
+                    <input type="text" class="form-control" value="{{lng}}">
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
